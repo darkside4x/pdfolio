@@ -1,40 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🚀 PDFolio - AI-Powered PDF Generator
 
-## Getting Started
+![PDFolio](https://user-images.githubusercontent.com/your-gif.gif)  
+**AI-driven PDF generation with user authentication, chat, and MongoDB integration**
 
-First, run the development server:
+[![Vercel Deployment](https://img.shields.io/badge/Deployed%20on-Vercel-blue?style=for-the-badge)](https://your-vercel-url.com)  
+[![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?style=for-the-badge)](https://www.mongodb.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🎯 Features
+✅ **Animated Interface** - Welcomes users with a smooth UI  
+✅ **User Authentication** - Secure login & signup with MongoDB  
+✅ **AI Chat System** - ChatGPT-like interface for topic generation  
+✅ **PDF Generation** - Generate and download PDFs seamlessly  
+✅ **Profile Management** - Update user details & API keys  
+✅ **Vercel Deployment** - Hosted with CI/CD pipeline  
+
+---
+
+## 📂 Project Structure
+```plaintext
+📦 PDFolio
+ ┣ 📂 components         # Reusable UI components
+ ┣ 📂 lib                # Utility functions (Rate limit, DB connection, etc.)
+ ┣ 📂 pages              # Next.js pages (Dashboard, Auth, etc.)
+ ┣ 📂 public             # Static assets
+ ┣ 📂 styles             # Global styles (CSS)
+ ┣ 📜 package.json       # Dependencies & scripts
+ ┗ 📜 README.md          # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🚀 Installation Guide
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/PDFolio.git
+cd PDFolio
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3️⃣ Configure Environment Variables
+Create a `.env.local` file and add:
+```env
+MONGODB_URI=your_mongodb_connection_string
+NEXTAUTH_SECRET=your_secret_key
+MONGODB_URI=
+JWT_SECRET=
+AI_API_PROVIDER=huggingface
+HUGGINGFACE_API_KEY=
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 4️⃣ Run Locally
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### 5️⃣ Deploy to Vercel
+```bash
+vercel
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📸 Screenshots
+![Dashboard](https://user-images.githubusercontent.com/your-dashboard.gif)  
+> *A sleek, user-friendly dashboard for managing PDFs*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![PDF Generation](https://user-images.githubusercontent.com/your-pdf-generation.gif)  
+> *Real-time AI-powered PDF creation*
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+
+## 🌍 Live Demo
+🔗 [Click here to access PDFolio](https://pdfolio.vercel.app/)
+
+💬 **Have questions?** Open an issue or reach out! 🚀
